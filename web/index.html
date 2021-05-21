@@ -6,6 +6,7 @@
 	<script src="https://kit.fontawesome.com/9464e3997a.js" crossorigin="anonymous" defer></script>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/master.css">
+	<script src="js/functions.js" defer></script>
 	<title>QuadSAT</title>
 </head>
 <body>
@@ -55,24 +56,26 @@
 			</div>
 		</article>
 		<article class="step-by-step">
-			<div class="wrapper flex space-between">
+			<div id="steps-wrapper" class="wrapper flex space-between">
+				<div id="back0" onclick="stepByStep(this)" class="step-nav"><i class="fas fa-angle-left"></i></div>
+				<div id="forward1" onclick="stepByStep(this)" class="step-nav"><i class="fas fa-angle-right"></i></div>
 				<div class="seperator">
-					<img src="img/steps/img1.jpg" alt="">
-					<ul class="flex">
-						<li class="completed"></li>
-						<li><div></div></li>
-						<li><div></div></li>
-						<li><div></div></li>
-						<li><div></div></li>
-						<li><div></div></li>
-						<li><div></div></li>
-						<li><div></div></li>
+					<img id="stepImg" src="img/steps/img1.jpg" alt="">
+					<ul class="flex" id="steps">
+						<li id="step0" class="completed" onclick="stepByStep(this)"></li>
+						<li id="step1" class="" onclick="stepByStep(this)"><div></div></li>
+						<li id="step2" class="" onclick="stepByStep(this)"><div></div></li>
+						<li id="step3" class="" onclick="stepByStep(this)"><div></div></li>
+						<li id="step4" class="" onclick="stepByStep(this)"><div></div></li>
+						<li id="step5" class="" onclick="stepByStep(this)"><div></div></li>
+						<li id="step6" class="" onclick="stepByStep(this)"><div></div></li>
+						<li id="step7" class="" onclick="stepByStep(this)"><div></div></li>
 					</ul>
 				</div>
 				<div class="seperator">
-					<h2>Step 1: Creating the mission</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et magna massa. Morbi ac consectetur diam, non ornare metus. Cras eu mauris tempor, luctus lorem sit amet, maximus risus. Etiam ac nunc lacus. Curabitur sit amet orci a mi dictum vestibulum eu nec tellus. Phasellus consequat suscipit bibendum. Pellentesque ut est eu est posuere rutrum eu ac sapien. Nullam quis libero et metus ornare lacinia vel ullamcorper nunc. Quisque vel est tincidunt, lacinia justo id, feugiat nunc. Donec sagittis sapien nisl, ut malesuada metus scelerisque et. Nam pellentesque, arcu ut tristique porttitor, magna ex viverra nulla, et porta est ipsum id sapien. Pellentesque sollicitudin leo nunc. Phasellus lacinia odio eu gravida rhoncus. Nullam ut nisl ni.
+					<h2 id="stepTitle">Step 1: Creating the mission</h2>
+					<p id="stepText">
+						The first time you start the software you will be gretted by this screen. Frome here you can either chose to import an existing mission or create a new one from scratch.
 					</p>
 				</div>
 			</div>

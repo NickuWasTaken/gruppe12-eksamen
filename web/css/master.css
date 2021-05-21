@@ -209,7 +209,7 @@ article:nth-child(1) ul .selected{
 }
 
 .completed, .completed div{
-	background-color: #0d76bd;
+	background-color: #0d76bd !important;
 }
 
 article:nth-child(2) p, article:nth-child(2) h2{
@@ -228,6 +228,41 @@ article:nth-child(2) ul{
 	width: 290px;
 }
 
+.step-nav{
+	position: absolute;
+	background-color: #fcfcfc;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 250px;
+}
+
+.step-nav i{
+	text-align: center;
+	font-size: 50px;
+	padding-right: 5px;
+	color: #21212e;
+	cursor: pointer;
+}
+
+.step-nav:nth-child(2) i{
+	text-align: center;
+	font-size: 50px;
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+#back0, #back-1, #back-2, #back-3, #back-4, #back-5, #back6, #back7{
+	margin-left: -100px;
+}
+
+#forward0, #forward1, #forward-2, #forward-3, #forward-4, #forward-5, #forward-6, #forward-7{
+	margin-left: 1400px;
+}
 
 footer{
 	padding-top: 100px;
