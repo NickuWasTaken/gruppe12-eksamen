@@ -19,11 +19,11 @@ p, h1, h2, a, body, li{
 .colors{
 	Background: #ffffff;
 	Alt. background: #21212e;
-	
+
 
 	Brødtekst: #707070;
 	Alt. brødtekst: #ffffff;
-	
+
 	Contrast: #0D76BD;
 }
 
@@ -36,7 +36,7 @@ p, h1, h2, a, body, li{
 }
 
 .flex-end{
-	align-items: flex-end;	
+	align-items: flex-end;
 }
 
 .vcenter{
@@ -96,7 +96,7 @@ nav{
 	padding-bottom: 20px;
 
 	justify-content: space-between;
-	align-items: flex-end;	
+	align-items: flex-end;
 }
 
 nav .logo{
@@ -120,9 +120,54 @@ nav i{
 	color: #0D76BD;
 }
 
+.hamContainer {
+
+}
+
+.ham {
+	position: relative;
+	z-index: 2;
+	width: 3rem;
+	height: 3rem;
+	background: white;
+	cursor: pointer;
+}
+
+.xIcon {
+	display: none;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: -10%;
+	width: 10%;
+	height: 100vh;
+	background: #21212e;
+	transform: translateX(-100%);
+	transition: transform 0.2s;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.menu > li {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.menuLink {
+	color: white;
+}
+
+.showMenu {
+	transform: translateY(0);
+}
+
 .button{
 	background-color: #0D76BD;
-	border: solid 1px #0D76BD;	
+	border: solid 1px #0D76BD;
 	border-radius: 50px;
 	padding: 15px;
 	margin-left: 20px;
@@ -149,7 +194,7 @@ article h2{
 	font-family: oswald;
 	font-size: 40px;
 	margin-left: 20px;
-	
+
 
 
 	margin-top: 125px;
