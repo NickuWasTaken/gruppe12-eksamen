@@ -4,8 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <link rel="stylesheet" type="text/css" href="styleguide.css">
-    <link rel="stylesheet" type="text/css" href="//db.onlinewebfonts.com/c/b8c332e7b686ba28daebf6524c66aeec?family=PMingLiU"/>
+    <link rel="stylesheet" type="text/css" href="//db.onlinewebfonts.com/c/b8c332e7b686ba28daebf6524c66aeec?family=PMingLiU" />
     <link rel="stylesheet" href="https://use.typekit.net/dsu0djj.css">
+    <script src="https://kit.fontawesome.com/9464e3997a.js" crossorigin="anonymous" defer></script>
 
     <title>QuadSAT : Style Guide</title>
 </head>
@@ -22,7 +23,7 @@
         </div>
 
 
-        <!---Navigationsbar for styleguide-->
+        <!---Nav-bar for styleguide-->
         <ul class="nav-links">
             <li>
                 <a href="#intro">Intro</a>
@@ -34,42 +35,41 @@
                 <a href="#font">Fonts</a>
             </li>
             <li>
-                <a href="#color">Farver</a>
+                <a href="#btns">Buttons</a>
+            </li>
+            <li>
+                <a href="#color">Colors</a>
             </li>
             <li>
                 <a href="#navi">Navigation</a>
             </li>
             <li>
-                <a href="#forms">Forms</a>
-            </li>
-            <li>
-                <a href="#icons">Ikoner</a>
+                <a href="#icons">Icons</a>
             </li>
         </ul>
 
         <div class="burger">
-            <div class="menu">MENU</div>
+            <div class="menu"></div>
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </nav>
 
-    <script src="burger.js" defer></script>
-    <!----Nav-bar for styleguide slut-->
+    <script src="script.js" defer></script>
+    <!----Nav-bar for styleguide end-->
 
-    <!----Introduktion til projekt-->
+    <!----Introduction to project-->
     <section id="intro">
         <div class="intro-text">
-            <h1>Styleguide til eksamensprojektet for 2. semester. Klienten er QuadSAT og produktet er en step-by-step guide underside.</h1>
+            <h1>This is a styleguide.</h1>
             <p>
-                
+                This styleguide is created as part of our exam project for our second term exam. Our client is QuadSAT and this is the elements to our coded solution.
             </p>
         </div>
     </section>
 
-
-    <!---Logo implementering-->
+    <!---Logo section start -->
     <section id="logo">
 
         <div class="logo-head">
@@ -78,22 +78,20 @@
         </div>
 
         <div class="logo-img">
-            <img src="logo.png" alt="logo">
+            <img src="logo.png" alt="QuadSAT logo black">
         </div>
 
         <div class="logo-text2">
-            <b>Anvendelse:</b> 
+            <b>Usage: </b>The logo is present on the website both in the top left corner and the bottom left corner in the footer.
         </div>
 
         <div class="code-box-logo1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
             <code class="code">
-&lt;div class="logo"&gt;
-    &lt;a href="#intro"&gt;
-        &lt;img src="logo.png" alt="logo"&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
+        &lt;img src="img/logo.png" alt="QuadSAT Logo" class="logo"&gt;
+
+        &lt;img src="img/logo-white.png" alt="QuadSAT logo" class="logo"&gt;
                 </code>
             </pre>
         </div>
@@ -102,18 +100,18 @@
             <h1>Code Snippet (CSS):</h1>
             <pre>
             <code class="code">
-.logo {
-    display: flex;
-    flex: 2;
-    width: 40%;
-    margin-left: 7%;
-    margin-right: 3%;
-  }
+            .logo {
+                display: flex;
+                flex: 2;
+                width: 40%;
+                margin-left: 7%;
+                margin-right: 3%;
+              }
 
-.logo img {
-    width: 200px;
-    padding-bottom: 10px;
-  }
+            .logo img {
+                width: 200px;
+                padding-bottom: 10px;
+              }
                 </code>
             </pre>
         </div>
@@ -127,9 +125,9 @@
                 </div>
         -->
     </section>
-    <!-- End of Logo Section -->
+    <!-- Logo section end -->
 
-    <!---Font afsnit-->
+    <!---Font section start-->
     <section id="font">
 
         <div class="font-head">
@@ -138,12 +136,12 @@
         </div>
 
         <div class="font-img">
-            <img src="headline.png" alt="Oswald">
-            <img src="brodtekst.png" alt="Lato">
+            <img src="Oswald.png" alt="Oswald">
+            <img src="Lato.png" alt="Lato">
         </div>
 
         <div class="font-text">
-            <b>Anvendelse:</b>
+            <b>Usage: </b>Oswald is used for headlines h1 and h2, and Lato is used for paragraphs and smaller headlines.
         </div>
 
         <!--       <div class="code-box-font1">
@@ -200,8 +198,65 @@
                 </div>
         -->
     </section>
-    <!-- End of Font Section -->
-    <!-- Farve og anvendelse af dem -->
+    <!-- Font afsnit slut -->
+
+    <!-- Buttons afsnit start -->
+        <section id="btns">
+
+            <div class="btns-head">
+                <h2>Buttons</h2>
+                <div class="btns-line"></div>
+            </div>
+
+            <div class="btns-img">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <div class="btns-text">
+            </div>
+
+                   <div class="code-box-btns1">
+                        <h1>Code Snippet (HTML):</h1>
+                        <pre>
+                            <code class="code">
+                             <p>Standard Button:</p>
+                    &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
+
+
+                              <p>Carousel:</p>          
+                                &lt;li&gt;&lt;/li&gt;
+                               <p>Current carousel:</p>
+                                 &lt;li class="selected"&gt;&lt;/li&gt;
+                               <p>Steps:</p>
+                                  &lt;li class=""&gt;&lt;/li&gt;
+                               <p>Steps Completed:</p>
+                                  &lt;li class="completed"&gt;&lt;/li&gt;
+                            </code>
+                        </pre>
+                    </div> 
+    <!--   <div class="code-box-btns2">
+            <h1>Code Snippet (CSS):</h1>
+            <pre>
+            <code class="code">
+
+             </code>
+            </pre>
+        </div>
+    -->
+    <!--
+            <div class="code-box-btns3">
+                <h1>Code Snippet (CSS):</h1>
+                <pre>
+                    <code class="code">
+                    </code>
+                </pre>
+            </div>
+    -->
+    </section>
+    <!-- Buttons section slut -->
+
+    <!-- Color section start -->
     <section id="color">
 
         <div class="col-head">
@@ -211,18 +266,18 @@
 
         <div class="col-box">
             <div class="hex-box1">
-                <p>HEX #</p>
+                <p>Background & alt. body text<br>HEX #FFFFFF</p>
             </div>
             <div class="hex-box2">
-                <p>HEX #</p>
+                <p>Alt. background<br>HEX #21212e</p>
             </div>
             <div class="hex-box3">
-                <p>HEX #</p>
+                <p>Body text<br>HEX #707070</p>
+            </div>
+            <div class="hex-box4">
+                <p>Contrast<br>HEX #0D76BD</p>
             </div>
         </div>
-
-        <div class="col-text">
-            <b>Anvendelse:</b> 
         </div>
         <!--
                 <div class="code-box-col1">
@@ -233,65 +288,15 @@
                     </pre>
                 </div>
         -->
-        <div class="code-box-col2">
+        <!--  <div class="code-box-col2">
             <h1>Code Snippet (CSS):</h1>
             <pre>
             <code class="code">
-                    .hex-box1 {
-                    height: 150px;
-                    width: 33%;
-                    position: relative;
-                    top: -80px;
-                    background-color: #D9CBBA;
-                    border: 3px solid #303030;
-                    }
 
-                    .hex-box1 p {
-                    font-size: .7rem;
-                    text-align: center;
-                    position: relative;
-                    top: 45%;
-                    color: #303030;
-                    }
-
-                    .hex-box2 {
-                    height: 150px;
-                    width: 33%;
-                    position: relative;
-                    top: -230px;
-                    left: 33%;
-                    background-color: #212121;
-                    }
-
-                    .hex-box2 p {
-                    font-size: .7rem;
-                    text-align: center;
-                    position: relative;
-                    top: 45%;
-                    color: #fff;
-                    }
-
-                    .hex-box3 {
-                    height: 150px;
-                    width: 33%;
-                    position: relative;
-                    top: -380px;
-                    left: 65.5%;
-                    background-color: #DCD0C0;
-                    border: 3px solid #303030;
-                    }
-
-                    .hex-box3 p {
-                    font-size: .7rem;
-                    text-align: center;
-                    position: relative;
-                    top: 45%;
-                    color: #212121;
-                    }
                 </code>
             </pre>
         </div>
-
+            -->
         <!--
                 <div class="code-box-col3">
                     <h1>Code Snippet (CSS):</h1>
@@ -303,8 +308,9 @@
         -->
 
     </section>
-    <!---Farve-afsnit slut-->
-    <!-- Navigation Section -->
+    <!--- Color section end -->
+
+    <!-- Nav-section start -->
     <section id="navi">
 
         <div class="navi-head">
@@ -317,30 +323,38 @@
         </div>
 
         <div class="navi-text">
-            <b> Anvendelse:</b> Navigationsbaren kommer til at være øverst på kampagnesiden, da den skal hjælpe brugeren
-            med at navigere rundt. Navagationsbaren indeholder punkterne forside, menu, tilbud, galleri, anmeldelse og kontakt.
-            Når brugern klikker på f.eks menu i navigationsbaren, vil brugeren automatisk blive sendt ned til menuen.
+            <b> Usage: </b>
         </div>
 
         <div class="code-box-navi1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
             <code class="code">
- &lt;nav class="navbar"&gt;
-    &lt;img src="images/logo.png" class="logo" /&gt;
-    &lt;ul&gt;
-     &lt;li&gt;
-        &lt;a id="forside" class="active" tabindex="0" href="#/"&gt;Forside&lt;/a&gt;
-     &lt;/li&gt;
-     &lt;li&gt;&lt;a id="menu" tabindex="0">Menu&lt;/a&gt;&lt;/li&gt;
-     &lt;li&gt;&lt;a id="tilbud" tabindex="0"&gt;Tilbud&lt;/a&gt;&lt;/li&gt;
-     &lt;li&gt;&lt;a id="galleri" tabindex="0"&gt;Galleri&lt;/a&gt;&lt;/li&gt;
-     &lt;li&gt;&lt;a id="anmeldelse" tabindex="0"&gt;Anmeldelse&lt;/a&gt;&lt;/li&gt;
-     &lt;li&gt;&lt;a id="kontakt" tabindex="0"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
+                    &lt;div class="seperator flex"&gt;
+                        &lt;ul class="flex vcenter"&gt;
+                            &lt;li&gt;&lt;a href=""&gt;Products &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=""&gt;Sectors &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=""&gt;Information & Resources &lt;i class="fas fa-angle-down"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=""&gt;About &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
+                        &lt;/div&gt;
 
-               </code>
+            <p>Burger</p>
+                        &lt;div class="hamContainer"&gt;
+                            &lt;button class="ham"&gt;
+                                &lt;span class="menuIcon material-icons"&gt;menu&lt;/span&gt;
+                                &lt;span class="xIcon material-icons"&gt;close&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;ul class="menu"&gt;
+                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Sectors&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Information & Resources&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
            </pre>
         </div>
 
@@ -348,302 +362,118 @@
             <h1>Code Snippet (CSS):</h1>
             <pre>
             <code class="code">
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  padding: 0 40px;
-}
-
-.navbar ul {
-  text-align: center;
-}
-.navbar ul li {
-  list-style: none;
-  display: inline-block;
-}
-.navbar ul li a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  font-family: "raleway", sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  margin: 30px;
-  cursor: pointer;
 
                </code>
            </pre>
         </div>
 
-    </section>
-    <!-- End of Navigation Section -->
+        <div class="code-box-navi3">
+            <h1>Code Snippet (JS):</h1>
+            <pre>
+            <code class="code">
+            <p>Burger</p>
+                    let menu = document.querySelector(".menu");
+                    let ham = document.querySelector(".ham");
+                    let xIcon = document.querySelector(".xIcon");
+                    let menuIcon = document.querySelector(".menuIcon");
 
-    <!--Kontaktformular start-->
-    <section id="forms">
+                    ham.addEventListener("click", toggleMenu);
 
-        <div class="forms-head">
-            <h2>Forms</h2>
-            <div class="forms-line"></div>
+                    function toggleMenu() {
+                    if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    xIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                    } else {
+                    menu.classList.add("showMenu");
+                    xIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                    }
+                    }
+
+                    let menuLinks = document.querySelectorAll(".menuLink");
+
+                    menuLinks.forEach(
+                    function (menuLink) {
+                    menuLink.addEventListener("click", toggleMenu);
+                    }
+                    )
+                </code>
+           </pre>
         </div>
 
-        <div class="wrapper">
-            <h2>Kontakt os</h2>
-            <div id="error_message"></div>
-
-            <form id="myform" onsubmit="return validation()">
-                <div class="input_field">
-                    <input type="text" placeholder="Navn" id="fname">
-                </div>
-                <div class="input_field">
-                    <input type="text" placeholder="Efternavn" id="lname">
-                </div>
-                <div class="input_field">
-                    <input type="text" placeholder="Email" id="email">
-                </div>
-                <div class="input_field">
-                    <textarea id="message" placeholder="Besked"></textarea>
-                </div>
-                <div class="btn">
-                    <input type="submit">
-                </div>
-
-                <div class="forms-text">
-                    <b>Anvendelse:</b>     "Kontakt os" er en kontaktformular, der kommer til at være nederst på kampagnesiden. Kontaktformularen kan benyttes af brugeren på hjemmeside, for at skabe kontakt til Flora Bubble Tea. Denne giver en besked øverst på kontakaktformularen, hvis man har glemt at udfylde noget. Dette er lavet ved hjælp af JavaScript.
-                    </div>
-            </form>
-        </div>
-        
-
-
-
-                <div class="code-box-forms1">
-                    <h1>Code Snippet (HTML):</h1>
-                    <pre>
-                    <code class="code">
-    &lt;div class="wrapper"&gt;
-            &lt;h2&gt;KONTAKT OS&lt;/h2&gt;
-            &lt;id="error_message"&gt;
-
-            &lt;form id="myform" onsubmit="return validation()"&gt;
-              &lt;div class="input_field"&gt;
-                &lt;input type="text" placeholder="Navn" id="fname"&gt;
-              &lt;/div&gt;
-              &lt;div class="input_field"&gt;
-                &lt;input type="text" placeholder="Efternavn" id="lname"&gt;
-              &lt;/div&gt;
-              &lt;div class="input_field"&gt;
-                &lt;input type="text" placeholder="Email" id="email"&gt;
-              &lt;/div&gt;
-              &lt;div class="input_field"&gt;
-                &lt;textarea id="message" placeholder="Besked"&gt;&lt;/textarea&gt;
-              &lt;/div&gt;
-              &lt;div class="btn"&gt;
-               &lt;input type="submit"&gt;
-              &lt;/div&gt;
-
-
-                    </code>
-                </pre>
-                </div>
-
-                <div class="code-box-forms2">
-                    <h1>Code Snippet (CSS):</h1>
-                    <pre>
-                    <code class="code">
-  .wrapper{
-    position: absolute;
-    top: 50%;
-    left:30%;
-    transform: translate(-50%,-50%);
-    max-width: 350px;
-    width: 100%;
-    background: #fff;
-    padding: 25px;
-    border-radius: 5px;
-  }
-
-
-   .wrapper h2{
-     text-align: left;
-     margin-bottom: 20px;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     color: black;
-  }
-
-
-   .wrapper .input_field{
-     margin-bottom: 20px;
-  }
-
-
-   .wrapper .input_field input[type="text"],
-   .wrapper textarea{
-     width: 100%;
-     border: 1px solid #e0e0e0;
-     padding: 5px;
-  }
-
-
-   .wrapper textarea{
-     height: 80px;
-     resize: none;
-  }
-
-
-   .wrapper .btn input[type="submit"]{
-     border: 0;
-     margin-top: 15px;
-     padding: 10px;
-     width: 100%;
-     background-color: #D9CBBA;
-     color: 332902;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     font-weight: bold;
-     border-radius: 25px;
-     cursor: pointer;
-     transition: .3s ease background-color;
-  }
-
-
-   .wrapper .btn input[type="submit"]:hover{
-     background-color: green;
-  }
-
-
-   .wrapper #error_message{
-     margin-bottom: 20px;
-     padding: 0px;
-     background: #fe8e8b;
-     text-align: center;
-     font-size: 14px;
-     transition: all 0.5s ease;
-   }
-                      </code>
-                  </pre>
-                </div>
-
-                <div class="code-box-forms3">
-                    <h1>Code Snippet (JS):</h1>
-                    <pre>
-                    <code class="code">
-
-    function validation(){
-      var fname = document.getElementById("fname").value;
-      var lname = document.getElementById("lname").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-      var error_message = document.getElementById("error_message");
-      var text;
-
-      error_message.style.padding = "10px";
-
-      if(fname.length &lt;1){
-        text = "Udfyld Navn";
-        error_message.innerHTML = text;
-        return false;
-      }
-
-      if(lname.length &lt;1){
-        text = "Udfyld Efternavn";
-        error_message.innerHTML = text;
-        return false;
-      }
-
-      if(email.indexOf("@") == -1 || email.length &lt;1){
-        text = "Udfyld Email";
-        error_message.innerHTML = text;
-        return false;
-      }
-
-      if(message.length <= 1){
-        text = "Udfyld Besked";
-        error_message.innerHTML = text;
-        return false;
-
-      }
-
-      alert("Beskeden er sendt!")
-      return true;
-
-      }
-
-                              </code>
-                          </pre>
-                </div>
-
-
-
     </section>
-    <!---Kontaktformular slut-->
+    <!-- Nav-section end -->
 
-    <!-- Icon Section -->
+    <!-- Icons section start -->
     <section id="icons">
 
         <div class="icons-head">
             <h2>Icons</h2>
             <div class="icons-line"></div>
         </div>
+        <div class="col-box">
+            <i class="fas fa-angle-down"></i>
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+        </div>
 
-        <div class="icons-img">
-            <img src="Email.png" alt="email ikon">
-            <img src="Kort.png" alt="lokation ikon">
-            <img src="Telefon.png" alt="telefon ikon">
-            <img src="Facebook.png" alt="facebook ikon">
-            <img src="Instagram.png" alt="instagram ikon">
+        <div class="col-box">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
         </div>
 
         <div class="icons-text">
-            <b>Anvendelse:</b>
+            <b>Usage:</b>Icons for the website are made using Font Awesome.
         </div>
 
         <div class="code-box-icons1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
-                <code class="code">
-                   &lt;div class="grid-container2"&gt;
-      &lt;div&gt;
-              &lt;ul&gt;
-                 &lt;li&gt;&lt;a href="https://www.instagram.com/florateaorg/?hl=da"&gt;&lt;img src="Instagram.png"&gt;&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href="https://www.facebook.com/flora.tea.org"&gt;&lt;img src="Facebook.png"&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+            <code class="code">
+                    &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;
+                    &lt;i class="fas fa-angle-left"&gt;&lt;/i&gt;
+                    &lt;i class="fas fa-angle-right"&gt;&lt;/i&gt;
+
+            <p>SoMes</p>
+                    &lt;i class="fab fa-facebook"&gt;&lt;/i&gt;
+                    &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;
+                    &lt;i class="fab fa-linkedin-in"&gt;&lt;/i&gt;
+
+            <p>Stylesheet link</p>
+                    &lt;script src="https://kit.fontawesome.com/9464e3997a.js" crossorigin="anonymous" defer&gt;&lt;/script&gt;
                 </code>
             </pre>
         </div>
 
-        <div class="code-box-icons2">
-            <h1>Code Snippet (CSS):</h1>
-            <pre>
+        <!-- <div class="code-box-icons2">
+                <h1>Code Snippet (CSS):</h1>
+                <pre>
                 <code class="code">
-        .footer .grid-container2 {
-            display: flex;
-            grid-template-columns: auto auto auto auto;
-            grid-template-rows: 10px;
-            grid-gap:1px;
-            background-color: #000000;
-            padding:1px;
-            padding-left: 830px;
-            }
+            .footer .grid-container2 {
+                display: flex;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: 10px;
+                grid-gap:1px;
+                background-color: #000000;
+                padding:1px;
+                padding-left: 830px;
+                }
 
-       .grid-container2 div ul {
-            display: flex;
-            list-style: none;
-            margin-top: 35px;
-            margin-bottom: 1px;
-            margin-left: 0px;
-            margin-right: 0px;
-            padding-left: 20px;
-                text-align: right;
-                </code>
-            </pre>
-        </div>
-    </section>
+           .grid-container2 div ul {
+                display: flex;
+                list-style: none;
+                margin-top: 35px;
+                margin-bottom: 1px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-left: 20px;
+                    text-align: right;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <!-- Icons section end -->
 </body>
     </html>
