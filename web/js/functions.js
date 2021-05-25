@@ -74,3 +74,4 @@ menuLinks.forEach(
 		menuLink.addEventListener("click", toggleMenu);
 	}
 )
+//burger menu slut

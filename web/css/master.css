@@ -120,8 +120,8 @@ nav i{
 	color: #0D76BD;
 }
 
+/* burger start */
 .hamContainer {
-
 }
 
 .ham {
@@ -164,6 +164,7 @@ nav i{
 .showMenu {
 	transform: translateY(0);
 }
+/* burger slut */
 
 .button{
 	background-color: #0D76BD;
