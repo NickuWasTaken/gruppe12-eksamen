@@ -302,11 +302,11 @@ article:nth-child(2) ul{
 	padding-left: 5px;
 }
 
-#back0, #back-1, #back-2, #back-3, #back-4, #back-5, #back6, #back7{
+#back-0, #back-1, #back-2, #back-3, #back-4, #back-5, #back-6, #back-7,#back-8{
 	margin-left: -100px;
 }
 
-#forward0, #forward1, #forward-2, #forward-3, #forward-4, #forward-5, #forward-6, #forward-7{
+#next-0, #next-1, #next-2, #next-3, #next-4, #next-5, #next-6, #next-7{
 	margin-left: 1400px;
 }
 

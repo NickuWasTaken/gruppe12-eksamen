@@ -1,15 +1,88 @@
+
+nav = document.querySelectorAll(".step-nav")
+if (nav[0].id == "back-0") {
+	nav[0].style.display = "none";
+} else {
+	nav[0].style.display = "flex";
+}
+
+if (nav[1].id == "next-7") {
+	nav[1].style.display = "none";
+} else {
+	nav[1].style.display = "flex";
+}
+
+var id
+
+if (id == undefined ){
+	currentId = 0;
+}
+
+if (currentId > 6) {
+	currentId = 0;
+}
+
+function previousStep(stepId){
+
+	var stepId = stepId.id
+	var regex = /\d+/g;
+	currentId = stepId.match(regex);  // creates array from matches
+
+	var backId = "back-"+ currentId;
+	var back = document.getElementById(backId);
+
+	var nextId = "next-"+ currentId;
+	var next = document.getElementById(nextId);
+
+	console.log(back);
+	console.log(backId);
+
+	currentId--;
+	back.setAttribute("id", "back-" + currentId);
+	next.setAttribute("id", "next-" + currentId);
+	
+}
+
+function nextStep(stepId){
+	var stepId = stepId.id
+	var regex = /\d+/g;
+	currentId = stepId.match(regex);  // creates array from matches
+	
+	var backId = "back-"+ currentId;
+	var back = document.getElementById(backId);
+
+	var nextId = "next-"+ currentId;
+	var next = document.getElementById(nextId);
+
+	currentId++;
+	back.setAttribute("id", "back-" + currentId);
+	next.setAttribute("id", "next-" + currentId);
+
+}
+
 function stepByStep(currentStep){
 
-	if (currentStep.id != null) {
+	if (currentStep.id !== null) {
 		var id = currentStep.id;
 		var regex = /\d+/g;
 		id = id.match(regex);  // creates array from matches
-		id = id ;
-
-		// var backId = "back"+id
-		// var back = document.getElementById(backId);
-		// back.setAttribute("id", "back" + id--);
 	}
+
+	currentId = id;
+	nav[0].setAttribute('id','back-' + id)
+	nav[1].setAttribute('id','next-' + id)
+	if (nav[0].id == "back-0") {
+		nav[0].style.display = "none";
+	} else {
+		nav[0].style.display = "flex";
+	}
+
+	if (nav[1].id == "next-7") {
+		nav[1].style.display = "none";
+	} else {
+		nav[1].style.display = "flex";
+	}
+	console.log(nav[1].id)
 
 	var imgSteps = ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg'];
 	var titleSteps = ['Step 1: Creating the mission', 'Step 2: Calibrating the software', 'Step 3: Overview', 'Step 4: Starting a new scan', 'Step 5: Overview', 'Step 6: Importing a new dataset', 'Step 7: Match Data with Scans', 'Step 8: Plot Data and Analyze!'];
@@ -35,19 +108,17 @@ function stepByStep(currentStep){
 			step.appendChild(connector);
 		}
 
-		if (i <= id){
+		if (i <= id){ 
 			step.setAttribute("class", "completed");
 		}
 
 		document.getElementById("steps").appendChild(step);
 	}
-
-	console.log(id);
-	console.log(imgSteps[id]);
-	console.log(titleSteps[id]);
-	console.log(textSteps[id]);
 }
-//burger menu js
+
+
+// Burger menu js
+
 let menu = document.querySelector(".menu");
 let ham = document.querySelector(".ham");
 let xIcon = document.querySelector(".xIcon");
@@ -73,5 +144,6 @@ menuLinks.forEach(
 	function (menuLink) {
 		menuLink.addEventListener("click", toggleMenu);
 	}
-)
-//burger menu slut
+	)
+
+// Burger menu slut

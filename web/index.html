@@ -54,7 +54,7 @@
 		</div>
 	</nav>
 
-<main>
+	<main>
 		<article class="about-software">
 			<div class="wrapper flex space-between">
 				<div class="seperator">
@@ -73,8 +73,8 @@
 		</article>
 		<article class="step-by-step">
 			<div id="steps-wrapper" class="wrapper flex space-between">
-				<div id="back0" onclick="stepByStep(this)" class="step-nav"><i class="fas fa-angle-left"></i></div>
-				<div id="forward1" onclick="stepByStep(this)" class="step-nav"><i class="fas fa-angle-right"></i></div>
+				<div id="back-0" onclick="previousStep(this); stepByStep(this)" class="step-nav"><i class="fas fa-angle-left"></i></div>
+				<div id="next-0" onclick="nextStep(this); stepByStep(this)" class="step-nav"><i class="fas fa-angle-right"></i></div>
 				<div class="seperator">
 					<img id="stepImg" src="img/steps/img1.jpg" alt="">
 					<ul class="flex" id="steps">
