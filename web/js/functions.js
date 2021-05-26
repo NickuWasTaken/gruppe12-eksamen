@@ -40,14 +40,14 @@ function previousStep(stepId){
 	currentId--;
 	back.setAttribute("id", "back-" + currentId);
 	next.setAttribute("id", "next-" + currentId);
-	
+
 }
 
 function nextStep(stepId){
 	var stepId = stepId.id
 	var regex = /\d+/g;
 	currentId = stepId.match(regex);  // creates array from matches
-	
+
 	var backId = "back-"+ currentId;
 	var back = document.getElementById(backId);
 
@@ -108,7 +108,7 @@ function stepByStep(currentStep){
 			step.appendChild(connector);
 		}
 
-		if (i <= id){ 
+		if (i <= id){
 			step.setAttribute("class", "completed");
 		}
 
@@ -147,3 +147,57 @@ menuLinks.forEach(
 	)
 
 // Burger menu slut
+
+//Antons JS - Slider
+//Variabler
+var i = 0;
+var billeder = [];
+var tid = 3000;
+
+//Billede array
+billeder[0] = 'img/timer/timer1.jpg'
+billeder[1] = 'img/timer/timer2.jpg'
+billeder[2] = 'img/timer/timer3.jpg'
+
+  //Skift billede og bubble
+  function skiftImg() {
+
+    document.getElementById('slide').src = billeder[i];
+    //Skifter bubble med billeder
+    if (i == 0) {
+      document.getElementById('bubble1').setAttribute('class', 'selected')
+      document.getElementById('bubble2').setAttribute('class', '')
+      document.getElementById('bubble3').setAttribute('class', '')
+    }
+
+    if (i == 1) {
+      document.getElementById('bubble1').setAttribute('class', '')
+      document.getElementById('bubble2').setAttribute('class', 'selected')
+      document.getElementById('bubble3').setAttribute('class', '')
+    }
+
+    if (i == 2) {
+      document.getElementById('bubble1').setAttribute('class', '')
+      document.getElementById('bubble2').setAttribute('class', '')
+      document.getElementById('bubble3').setAttribute('class', 'selected')
+    }
+    //Skift billede
+    if (i < billeder.length - 1) {
+      i++;
+    }
+    else {
+      i = 0;
+    }
+    //Metode så billederne skifter efter varibalen tids værdi
+    setTimeout("skiftImg()", tid);
+  }
+
+  //Søger for at loade skiftImg funktion når siden åbnes
+  window.onload = skiftImg;
+
+//For at vise at jeg kan for loops
+  for (var count = 0; count <= 12; count++) {
+    console.log(count)
+  }
+
+//Slider slut
