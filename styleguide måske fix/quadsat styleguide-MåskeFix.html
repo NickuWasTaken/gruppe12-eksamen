@@ -86,6 +86,7 @@
                     <b>Usage: </b>The logo is present on the website both in the top left corner and the bottom left corner in the footer.
                 </div>
             </div>
+            
         </div>
         <div class="code-column">
             <div class="code-container">
@@ -151,33 +152,33 @@
             <pre>
             <code class="code">
                  html {
-                 font-family: Lato, sans-serif;
+                    font-family: Lato, sans-serif;
                  }
 
                  h1 {
-                 font-family: Oswald, sans-serif;
-                 font-weight: 400;
-                 font-style: normal;
-                 font-size:47px;
+                    font-family: Oswald, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size:47px;
                  }
 
                  h2 {
-                 font-family: Oswald, sans-serif;
-                 font-weight: 400;
-                 font-style: normal;
-                text-align: center;
-                 font-size:30px;
+                    font-family: Oswald, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-align: center;
+                    font-size:30px;
                  }
 
                 h3 {
-                font-family: Lato, sans-serif;
-                font-size: 30px;
+                    font-family: Lato, sans-serif;
+                    font-size: 30px;
                 }
 
                  p {
-                 font-family: Lato, sans-serif;
-                font-weight: 400;
-                 font-size:16px;
+                    font-family: Lato, sans-serif;
+                    font-weight: 400;
+                    font-size:16px;
                  }
              </code>
             </pre>
@@ -197,54 +198,151 @@
 
                 <div class="section-row">
                     <div class="section-img">
-                        <img src="" alt="">
+                        <img src="btns/button.png" alt="General button/ CTA button">
                     </div>
 
                     <div class="section-text">
-                        <b>Usage: </b>The x button used at y place to do z
+                        <b>Usage: </b>This button is the standard design for buttons and CTA
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="section-img">
+                        <img src="btns/Back-1.png" alt="back button 1">
+                    </div>
+
+                    <div class="section-text">
+                        <b>Usage: </b> This button makes the step by step guide go back one step
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="section-img">
+                        <img src="btns/next.png" alt="next step button">
+                    </div>
+
+                    <div class="section-text">
+                        <b>Usage: </b>This button makes the step by step guide go forward one step
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="section-img">
+                        <img src="btns/past-step.png" alt="previous steps button/indacator">
+                    </div>
+
+                    <div class="section-text">
+                        <b>Usage: </b>this button is both used to indicate all steps up until the current one, aswell as being able to change the step you're on
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="section-img">
+                        <img src="btns/next-steps.png" alt="future steps button/indacator">
+                    </div>
+
+                    <div class="section-text">
+                        <b>Usage: </b>this button is both used to indicate all future steps , aswell as being able to change the step you're on
                     </div>
                 </div>
             </div>
+
             <div class="code-column">       
                 <div class="code-container">
                     <h1>Code Snippet (HTML):</h1>
                     <pre>
                         <code class="code">
                             <p>Standard Button:</p>
-                            &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
+        &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
 
+                            <p>back Button:</p>
+        &lt;div id=&quot;back-0&quot; onclick=&quot;previousStep(this); stepByStep(this)&quot; class=&quot;step-nav&quot;&gt;&lt;i class=&quot;fas fa-angle-left&quot;&gt;&lt;/i&gt;&lt;/div&gt;
 
-                              <p>Carousel:</p>
-                                &lt;li&gt;&lt;/li&gt;
-                               <p>Current carousel:</p>
-                                 &lt;li class="selected"&gt;&lt;/li&gt;
-                               <p>Steps:</p>
-                                  &lt;li class=""&gt;&lt;/li&gt;
-                               <p>Steps Completed:</p>
-                                  &lt;li class="completed"&gt;&lt;/li&gt;
-                            </code>
-                        </pre>
-                
+                            <p>back Button:</p>
+        &lt;div id=&quot;next-0&quot; onclick=&quot;nextStep(this); stepByStep(this)&quot; class=&quot;step-nav&quot;&gt;&lt;i class=&quot;fas fa-angle-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
 
+                            <p>previous steps/ steps Completed:</p>
+        &lt;li class="completed"&gt;&lt;/li&gt;
+                            <p>future steps:</p>
+        &lt;li class=""&gt;&lt;/li&gt;
+                        </code>
+                    </pre>           
                 </div>
+
                 <div class="code-container">
                     <h1>Code Snippet (CSS):</h1>
-                        <pre>
-                            <code class="code">
-                                heje med dig
-                                sdflkj
-                                sdlkjf
-                                lkjsdf
-                                lksjdf
-                            </code>
-            </pre>
-        </div>
+                    <pre>
+                        <code class="code">
+                            <p>Standard Button:</p>
+        .button{
+            background-color: #0D76BD;
+            border: solid 1px #0D76BD;
+            border-radius: 50px;
+            padding: 15px;
+            margin-left: 20px;
+            color: #fff;
+            transition: ease .4s;
+        }
+                            
+        .button:hover{
+            transition: ease .4s;
+            color: #0D76BD;
+             background-color: #fff;
+        }
+                            <p>Back & next Button:</p>
+        .step-nav{
+            position: absolute;
+            background-color: #fcfcfc;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 250px;
+        }
+                            
+        .step-nav i{
+            text-align: center;
+            font-size: 50px;
+            padding-right: 5px;
+            color: #21212e;
+            cursor: pointer;
+        }
+                            
+        #back-0, #next-1, ...{
+            margin-left: -100px;
+        }
+                            
+        #next-0, #next-1, ...{
+            margin-left: 1400px;
+        }
+                            <p>Step tracking buttons:</p>   
+        .completed, .completed div{
+            background-color: #0d76bd !important;
+        }
+                            
+        article:nth-child(2) p, article:nth-child(2) h2{
+            color: #fff;
+        }
+                            
+        article:nth-child(2) li div{
+            height: 3px;
+            width: 20px;
+            background-color: #eee;
+            margin-left: -14px;
+            margin-top: 9px;
+        }
+                            
+        article:nth-child(2) ul{
+            width: 290px;
+        }   
+                        </code>
+                    </pre>
+                </div>
+
             </div>
     </section>
     <!-- Buttons section slut -->
 
     <!-- Color section start -->
-    <section class="section-container">
+    <section id="color" class="section-container">
         <div class="section-head">
             <h2>Colors</h2>
             <div class="section-line"></div>
@@ -265,201 +363,240 @@
                 </div>
             </div>
         </div>
-        <!--
-                <div class="code-box-col1">
-                    <h1>Code Snippet (HTML):</h1>
-                    <pre>
-                        <code class="code">
-                        </code>
-                    </pre>
-                </div>
-        -->
-        <!--  <div class="code-box-col2">
-            <h1>Code Snippet (CSS):</h1>
-            <pre>
-            <code class="code">
-
-                </code>
-            </pre>
-        </div>
-            -->
-        <!--
-                <div class="code-box-col3">
-                    <h1>Code Snippet (CSS):</h1>
-                    <pre>
-                        <code class="code">
-                        </code>
-                    </pre>
-                </div>
-        -->
-
     </section>
     <!--- Color section end -->
 
     <!-- Nav-section start -->
-    <section class="section-container">
+    <section id="nav" class="section-container">
+        <div class="left-column">
+            <div class="section-head">
+                <h2>Navigation</h2>
+                <div class="section-line"></div>
+            </div>
 
-        <div class="navi-head">
-            <h2>Navigation</h2>
-            <div class="navi-line"></div>
+            <div class="section-row">
+                <div class="section-img">
+                    <img src="btns/nav.png" alt="picture of the navigation">
+                </div>
+
+                <div class="section-text">
+                    <b> Usage: </b> used for navigating the website, aswell as hosting the "request a demo" and burger menu
+                </div>
+            </div>
+            <div class="section-row">
+                <div class="section-img">
+                    <img src="btns/ham.png" alt="picture of the hamburger menu">
+                </div>
+
+                <div class="section-text">
+                    <b> Usage: </b> used for navigating the website when the screen gets small
+                </div>
+            </div>
         </div>
 
-        <div class="navi-img">
-            <img src="navigation.png" alt="logo">
-        </div>
+        <div class="code-column">
+            <div class="code-container">
+                <h1>Code Snippet (HTML):</h1>
+                <pre>
+                <code class="code">
+                    <p>Navigation bar:</p>
+        &lt;div class="seperator flex"&gt;
+            &lt;ul class="flex vcenter"&gt;
+                &lt;li&gt;&lt;a href=""&gt;Products &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;Sectors &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;Information & Resources &lt;i class="fas fa-angle-down"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=""&gt;About &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
+        &lt;/div&gt;
 
-        <div class="navi-text">
-            <b> Usage: </b>
-        </div>
+                <p>Burger</p>
+        &lt;div class="hamContainer"&gt;
+            &lt;button class="ham"&gt;
+                &lt;span class="menuIcon material-icons"&gt;menu&lt;/span&gt;
+                &lt;span class="xIcon material-icons"&gt;close&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Sectors&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Information & Resources&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+            </pre>
+            </div>
 
-        <div class="code-box-navi1">
-            <h1>Code Snippet (HTML):</h1>
-            <pre>
-            <code class="code">
-                    &lt;div class="seperator flex"&gt;
-                        &lt;ul class="flex vcenter"&gt;
-                            &lt;li&gt;&lt;a href=""&gt;Products &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=""&gt;Sectors &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=""&gt;Information & Resources &lt;i class="fas fa-angle-down"&gt;&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=""&gt;About &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                        &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
-                        &lt;/div&gt;
+            <div class="code-container">
+                <h1>Code Snippet (CSS):</h1>
+                <pre>
+                <code class="code">
+                    <p>Navigation bar:</p>
+        nav{
+            background-color: #fff;
+            height: 90px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+                    
+        nav .logo{
+            height: 90px;
+            margin-bottom: 15px;
+            transition: ease .4s;
+        }
+                    
+        nav .logo:hover{
+            transition: ease .4s;
+            opacity: .75;
+        }
+                    
+        nav li a{
+            padding: 15px 10px;
+            margin-right: 20px;
+        }
+                    
+        nav i{
+            margin-left: 10px;
+            color: #0D76BD;
+        }
+                    <p>Burger menu:</p>
+        .hamContainer {
+        }
+                    
+        .ham {
+            position: relative;
+            z-index: 2;
+            width: 3rem;
+            height: 3rem;
+            background: white;
+            cursor: pointer;
+        }
+                    
+        .xIcon {
+            display: none;
+        }
+                    
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -10%;
+            width: 10%;
+            height: 100vh;
+            background: #21212e;
+            transform: translateX(-100%);
+            transition: transform 0.2s;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+                    
+        .menu > li {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+                    
+        .menuLink {
+            color: white;
+        }
+                    
+        .showMenu {
+            transform: translateY(0);
+        }
 
-            <p>Burger</p>
-                        &lt;div class="hamContainer"&gt;
-                            &lt;button class="ham"&gt;
-                                &lt;span class="menuIcon material-icons"&gt;menu&lt;/span&gt;
-                                &lt;span class="xIcon material-icons"&gt;close&lt;/span&gt;
-                            &lt;/button&gt;
-                            &lt;ul class="menu"&gt;
-                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Sectors&lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;Information & Resources&lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt;&lt;a class="menuLink" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-                            &lt;/ul&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
                 </code>
-           </pre>
-        </div>
+            </pre>
+            </div>
 
-        <div class="code-box-navi2">
-            <h1>Code Snippet (CSS):</h1>
-            <pre>
-            <code class="code">
+            <div class="code-container">
+                <h1>Code Snippet (JS):</h1>
+                <pre>
+                <code class="code">
+                <p>Burger</p>
+        let menu = document.querySelector(".menu");
+        let ham = document.querySelector(".ham");
+        let xIcon = document.querySelector(".xIcon");
+        let menuIcon = document.querySelector(".menuIcon");
 
-               </code>
-           </pre>
-        </div>
+        ham.addEventListener("click", toggleMenu);
 
-        <div class="code-box-navi3">
-            <h1>Code Snippet (JS):</h1>
-            <pre>
-            <code class="code">
-            <p>Burger</p>
-                    let menu = document.querySelector(".menu");
-                    let ham = document.querySelector(".ham");
-                    let xIcon = document.querySelector(".xIcon");
-                    let menuIcon = document.querySelector(".menuIcon");
+        function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        xIcon.style.display = "none";
+        menuIcon.style.display = "block";
+        } else {
+        menu.classList.add("showMenu");
+        xIcon.style.display = "block";
+        menuIcon.style.display = "none";
+        }
+        }
 
-                    ham.addEventListener("click", toggleMenu);
+        let menuLinks = document.querySelectorAll(".menuLink");
 
-                    function toggleMenu() {
-                    if (menu.classList.contains("showMenu")) {
-                    menu.classList.remove("showMenu");
-                    xIcon.style.display = "none";
-                    menuIcon.style.display = "block";
-                    } else {
-                    menu.classList.add("showMenu");
-                    xIcon.style.display = "block";
-                    menuIcon.style.display = "none";
-                    }
-                    }
-
-                    let menuLinks = document.querySelectorAll(".menuLink");
-
-                    menuLinks.forEach(
-                    function (menuLink) {
-                    menuLink.addEventListener("click", toggleMenu);
-                    }
-                    )
-                </code>
-           </pre>
+        menuLinks.forEach(
+        function (menuLink) {
+        menuLink.addEventListener("click", toggleMenu);
+        }
+        )
+                    </code>
+            </pre>
+            </div>
         </div>
 
     </section>
     <!-- Nav-section end -->
 
     <!-- Icons section start -->
-    <section class="section-container">
+    <section id="icons" class="section-container">
+        <div class="left-column">
+            <div class="section-head">
+                <h2>Icons</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-row">
+                <div class="section-img">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-right"></i>
+                </div>
 
-        <div class="icons-head">
-            <h2>Icons</h2>
-            <div class="icons-line"></div>
-        </div>
-        <div class="col-box">
-            <i class="fas fa-angle-down"></i>
-            <i class="fas fa-angle-left"></i>
-            <i class="fas fa-angle-right"></i>
+                <div class="section-img">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+                <div class="section-text">
+                    <b>Usage:</b>Icons for the website are made using Font Awesome.
+                </div>
+            </div>
         </div>
 
-        <div class="col-box">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
-        </div>
-
-        <div class="icons-text">
-            <b>Usage:</b>Icons for the website are made using Font Awesome.
-        </div>
-
-        <div class="code-box-icons1">
+        <div class="code-column">
+            <div class="code-container">
             <h1>Code Snippet (HTML):</h1>
             <pre>
-            <code class="code">
+                <code class="code">
                     &lt;i class="fas fa-angle-down"&gt;&lt;/i&gt;
                     &lt;i class="fas fa-angle-left"&gt;&lt;/i&gt;
                     &lt;i class="fas fa-angle-right"&gt;&lt;/i&gt;
 
-            <p>SoMes</p>
+                    <p>SoMes</p>
                     &lt;i class="fab fa-facebook"&gt;&lt;/i&gt;
                     &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;
                     &lt;i class="fab fa-linkedin-in"&gt;&lt;/i&gt;
 
-            <p>Stylesheet link</p>
+                    <p>Stylesheet link</p>
                     &lt;script src="https://kit.fontawesome.com/9464e3997a.js" crossorigin="anonymous" defer&gt;&lt;/script&gt;
                 </code>
             </pre>
-        </div>
-
-        <!-- <div class="code-box-icons2">
-                <h1>Code Snippet (CSS):</h1>
-                <pre>
-                <code class="code">
-            .footer .grid-container2 {
-                display: flex;
-                grid-template-columns: auto auto auto auto;
-                grid-template-rows: 10px;
-                grid-gap:1px;
-                background-color: #000000;
-                padding:1px;
-                padding-left: 830px;
-                }
-
-           .grid-container2 div ul {
-                display: flex;
-                list-style: none;
-                margin-top: 35px;
-                margin-bottom: 1px;
-                margin-left: 0px;
-                margin-right: 0px;
-                padding-left: 20px;
-                    text-align: right;
-                    </code>
-                </pre>
             </div>
-        </section>
-        <!-- Icons section end -->
-</body>
-    </html>
+        </div>
+    </section>
+    <!-- Icons section end -->
+    </body>
+</html>
