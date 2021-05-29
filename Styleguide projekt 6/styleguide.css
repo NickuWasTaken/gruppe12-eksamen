@@ -15,6 +15,10 @@ h1,h2 {
     font-family: Oswald, sans-serif;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 body {
     background: #fff;
     scroll-behavior: smooth;
@@ -250,9 +254,8 @@ nav {
 
 /* Logo Section */
 #logo {
-    height: 90vh;
-    margin-left: 7%;
-    margin-top: 10vh;
+    height: 85vh;
+    margin: 0 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50% 50%;
@@ -346,13 +349,11 @@ nav {
 
 /* Start of Font section */
 #font {
-    height: 120vh;
-    margin-top: 15vh;
-    margin-left: 7%;
+    height: 85vh;
+    margin: 0 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 33% 33% 33%;
-    overflow: scroll;
 }
 
 .font-head {
@@ -381,7 +382,7 @@ nav {
 
 .font-text {
     grid-column: 1/1;
-    grid-row: 3/3;
+    grid-row: 4/4;
     font-size: 14px;
     position: relative;
     top: -100px;
@@ -443,26 +444,28 @@ nav {
 
 /* Button section */
  #btns {
-    height: 120vh;
-    margin-top: -10vh;
-    margin-left: 7%;
+    height: 85vh;
+    margin: 0 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 33% 33% 33%;
 }
 
 .btns-head {
+    display: flex;
+    flex-direction: column;
     grid-column: 1/1;
     grid-row: 1/1;
+    text-align: left;
+    align-items: left;
 }
 
 .btns-line {
-    width: 100px;
+    width: 150px;
     height: 3px;
     background-color: #212121;
-    margin: 0;
     transition: all 0.3s ease;
-    flex: 1;
+    /* flex: 1; */
 }
 .btns-text {
     grid-column: 1/1;
@@ -491,8 +494,8 @@ nav {
 
 .code-box-btns1 {
     grid-column: 2/2;
-    grid-row: 1/2;
-    height: 480px;
+    grid-row: 1/4;
+    /* height: 480px; */
     width: 80%;
     text-align: left;
     background-color: #fff;
@@ -500,7 +503,7 @@ nav {
     border-radius: 20px;
     padding: 20px;
     position: relative;
-    margin: 0 auto 80px auto;
+    margin: 0 0 0 auto;
     overflow: scroll;
 }
 

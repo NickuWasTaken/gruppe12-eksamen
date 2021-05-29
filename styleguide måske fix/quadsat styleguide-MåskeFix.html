@@ -3,13 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <link rel="stylesheet" type="text/css" href="styleguide.css">
+    <link rel="stylesheet" type="text/css" href="styleguideMåskeFix.css">
     <link rel="stylesheet" type="text/css" href="//db.onlinewebfonts.com/c/b8c332e7b686ba28daebf6524c66aeec?family=PMingLiU" />
     <link rel="stylesheet" href="https://use.typekit.net/dsu0djj.css">
     <script src="https://kit.fontawesome.com/9464e3997a.js" crossorigin="anonymous" defer></script>
 
     <title>QuadSAT : Style Guide</title>
-</head>
+</head> 
 <body>
     <nav>
         <div class="logo">
@@ -70,89 +70,83 @@
     </section>
 
     <!---Logo section start -->
-    <section id="logo">
+    <section id="logo" class="section-container">
 
-        <div class="logo-head">
-            <h2>Logo</h2>
-            <div class="logo-line2"></div>
-        </div>
-
-        <div class="logo-img">
-            <img src="logo.png" alt="QuadSAT logo black">
-        </div>
-
-        <div class="logo-text2">
-            <b>Usage: </b>The logo is present on the website both in the top left corner and the bottom left corner in the footer.
-        </div>
-
-        <div class="code-box-logo1">
-            <h1>Code Snippet (HTML):</h1>
-            <pre>
-            <code class="code">
-        &lt;img src="img/logo.png" alt="QuadSAT Logo" class="logo"&gt;
-
-        &lt;img src="img/logo-white.png" alt="QuadSAT logo" class="logo"&gt;
-                </code>
-            </pre>
-        </div>
-
-        <div class="code-box-logo2">
-            <h1>Code Snippet (CSS):</h1>
-            <pre>
-            <code class="code">
-            .logo {
-                display: flex;
-                flex: 2;
-                width: 40%;
-                margin-left: 7%;
-                margin-right: 3%;
-              }
-
-            .logo img {
-                width: 200px;
-                padding-bottom: 10px;
-              }
-                </code>
-            </pre>
-        </div>
-        <!--
-                <div class="code-box-logo3">
-                    <h1>Code Snippet (JS):</h1>
-                    <pre>
-                        <code class="code">
-                        </code>
-                    </pre>
+        <div class="left-column">
+            <div class="section-head">
+                <h2>Logo</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="section-row">
+                <div class="section-img">
+                    <img src="logo.png" alt="QuadSAT logo black">
                 </div>
-        -->
+
+                <div class="section-text">
+                    <b>Usage: </b>The logo is present on the website both in the top left corner and the bottom left corner in the footer.
+                </div>
+            </div>
+        </div>
+        <div class="code-column">
+            <div class="code-container">
+                <h1>Code Snippet (HTML):</h1>
+                <pre>
+                <code class="code">
+            &lt;img src="img/logo.png" alt="QuadSAT Logo" class="logo"&gt;
+   
+            &lt;img src="img/logo-white.png" alt="QuadSAT logo" class="logo"&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div class="code-container">
+                <h1>Code Snippet (CSS):</h1>
+                <pre>
+                <code class="code">
+                .logo {
+                    display: flex;
+                    flex: 2;
+                    width: 40%;
+                    margin-left: 7%;
+                    margin-right: 3%;
+                }
+
+                .logo img {
+                    width: 200px;
+                    padding-bottom: 10px;
+                }
+                    </code>
+                </pre>
+            </div>
+        </div>
     </section>
     <!-- Logo section end -->
 
     <!---Font section start-->
-    <section id="font">
+    <section id="font" class="section-container">
+        <div class="left-column">
+            <div class="section-head">
+                <h2>Fonts</h2>
+                <div class="section-line"></div>
+            </div>
 
-        <div class="font-head">
-            <h2>Fonts</h2>
-            <div class="font-line"></div>
-        </div>
-
-        <div class="font-img">
-            <img src="Oswald.png" alt="Oswald">
-            <img src="Lato.png" alt="Lato">
-        </div>
-
-        <div class="font-text">
-            <b>Usage: </b>Oswald is used for headlines h1 and h2, and Lato is used for paragraphs and smaller headlines.
-        </div>
-
-        <!--       <div class="code-box-font1">
-                    <h1>Code Snippet (HTML):</h1>
-                    <pre>
-                        <code class="code">
-                        </code>
-                    </pre>
+            <div class="section-row">    
+                <div class="section-img">
+                    <img src="Oswald.png" alt="Oswald">
                 </div>
-        -->
-        <div class="code-box-font2">
+
+                <div class="section-text">
+                    <b>Usage: </b>Oswald is used for headlines h1 and h2, and Lato is used for paragraphs and smaller headlines.
+                </div>
+            </div>
+            <div class="section-row">    
+                <div class="section-img">
+                    <img src="Lato.png" alt="Lato">
+                </div>
+            </div>
+        </div>
+        <div class="code-column">
+            <div class="code-container">
             <h1>Code Snippet (CSS):</h1>
             <pre>
             <code class="code">
@@ -187,41 +181,37 @@
                  }
              </code>
             </pre>
+            </div>
         </div>
-        <!--
-                <div class="code-box-font3">
-                    <h1>Code Snippet (CSS):</h1>
-                    <pre>
-                        <code class="code">
-                        </code>
-                    </pre>
-                </div>
-        -->
     </section>
     <!-- Font afsnit slut -->
 
     <!-- Buttons afsnit start -->
-        <section id="btns">
+        <section id="btns" class="section-container">
+            
+            <div class="left-column">
+                <div class="btns-head">
+                    <h2>Buttons</h2>
+                    <div class="section-line"></div>
+                </div>
 
-            <div class="btns-head">
-                <h2>Buttons</h2>
-                <div class="btns-line"></div>
+                <div class="section-row">
+                    <div class="section-img">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="section-text">
+                        <b>Usage: </b>The x button used at y place to do z
+                    </div>
+                </div>
             </div>
-
-            <div class="btns-img">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-
-            <div class="btns-text">
-            </div>
-
-                   <div class="code-box-btns1">
-                        <h1>Code Snippet (HTML):</h1>
-                        <pre>
-                            <code class="code">
-                             <p>Standard Button:</p>
-                    &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
+            <div class="code-column">       
+                <div class="code-container">
+                    <h1>Code Snippet (HTML):</h1>
+                    <pre>
+                        <code class="code">
+                            <p>Standard Button:</p>
+                            &lt;a href="" class="button"&gt;Request a Demo&lt;/a&gt;
 
 
                               <p>Carousel:</p>
@@ -234,50 +224,46 @@
                                   &lt;li class="completed"&gt;&lt;/li&gt;
                             </code>
                         </pre>
-                    </div>
-    <!--   <div class="code-box-btns2">
-            <h1>Code Snippet (CSS):</h1>
-            <pre>
-            <code class="code">
+                
 
-             </code>
+                </div>
+                <div class="code-container">
+                    <h1>Code Snippet (CSS):</h1>
+                        <pre>
+                            <code class="code">
+                                heje med dig
+                                sdflkj
+                                sdlkjf
+                                lkjsdf
+                                lksjdf
+                            </code>
             </pre>
         </div>
-    -->
-    <!--
-            <div class="code-box-btns3">
-                <h1>Code Snippet (CSS):</h1>
-                <pre>
-                    <code class="code">
-                    </code>
-                </pre>
             </div>
-    -->
     </section>
     <!-- Buttons section slut -->
 
     <!-- Color section start -->
-    <section id="color">
-
-        <div class="col-head">
+    <section class="section-container">
+        <div class="section-head">
             <h2>Colors</h2>
-            <div class="col-line"></div>
+            <div class="section-line"></div>
         </div>
-
-        <div class="col-box">
-            <div class="hex-box1">
-                <p>Background & alt. body text<br>HEX #FFFFFF</p>
+        <div class="section-nocode">
+            <div class="section-nocode">
+                <div id="bg-color" class="color">
+                    <p>Background & <br>alt. body text<br>HEX #FFFFFF</p>
+                </div>
+                <div id="alt-bg-color" class="color">
+                    <p>Alt. background<br>HEX #21212e</p>
+                </div>
+                <div id="bodytxt-color" class="color">
+                    <p>Body text<br>HEX #707070</p>
+                </div>
+                <div id="contrast-color" class="color">
+                    <p>Contrast<br>HEX #0D76BD</p>
+                </div>
             </div>
-            <div class="hex-box2">
-                <p>Alt. background<br>HEX #21212e</p>
-            </div>
-            <div class="hex-box3">
-                <p>Body text<br>HEX #707070</p>
-            </div>
-            <div class="hex-box4">
-                <p>Contrast<br>HEX #0D76BD</p>
-            </div>
-        </div>
         </div>
         <!--
                 <div class="code-box-col1">
@@ -311,7 +297,7 @@
     <!--- Color section end -->
 
     <!-- Nav-section start -->
-    <section id="navi">
+    <section class="section-container">
 
         <div class="navi-head">
             <h2>Navigation</h2>
@@ -406,7 +392,7 @@
     <!-- Nav-section end -->
 
     <!-- Icons section start -->
-    <section id="icons">
+    <section class="section-container">
 
         <div class="icons-head">
             <h2>Icons</h2>
