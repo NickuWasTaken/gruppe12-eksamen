@@ -123,6 +123,7 @@ nav i{
 /* burger start */
 
 .ham {
+	display: none;
 	position: relative;
 	z-index: 2;
 	width: 3rem;
@@ -404,4 +405,164 @@ footer .logo:hover{
 
 .copyright .seperator:nth-child(3) a{
 	color: #0D76BD;
+}
+
+
+@media only screen and (max-width: 1350px) {
+	.wrapper{
+		width: 95%;
+		margin: auto;
+	}
+
+	.blue-bar{
+		display: none;
+	}
+
+	article > .flex{
+		flex-direction: column;
+	}
+
+	article p, article h2{
+		width: 95%;
+		margin: 2.5% 0;
+	}
+
+	article .seperator{
+		width: 100%;
+	}
+
+	article .seperator *{
+		width: inherit
+	}
+
+	article .seperator img{
+		width: auto;
+		max-height: auto;
+		margin: auto;
+		margin-top: 50px;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	#bubbles{
+		width: 100px;
+		margin-bottom: 50px;
+	}
+
+	#steps{
+		margin-bottom: 30px;
+	}
+
+	.hamContainer{
+		margin-right: 22%;
+	}
+
+	.ham{
+		display: block;
+	}
+
+	.menu{
+		width: 20%;
+		right: -20%;
+		align-items: center;
+	}
+
+	.menu li a{
+		margin-right: 	unset;
+	}
+
+
+	.step-nav{
+		display: none;
+	}
+
+	#stepText{
+		padding-bottom: 30px;
+	}
+
+	.material-icons{
+		font-size: 40px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 1050px) {
+
+	.wrapper{
+		height: unset;
+	}
+
+	footer{
+		padding-top: unset;
+		height: unset;
+	}
+
+	footer .logo{
+		margin-right: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	footer .flex, .copyright > .flex{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.copyright .seperator:nth-child(2){
+		width: unset;
+	}
+
+	.copyright{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.copyright .seperator:nth-child(3) p{
+		text-align: center;
+	}
+
+	.copyright .seperator:nth-child(1) p{
+		padding-bottom: 5px;
+	}
+
+	.copyright .seperator:nth-child(3) p{
+		padding-top: 5px;
+	}
+
+	.footer-links{
+		height: inherit;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	article .seperator img{
+		height: auto;
+		min-width: 250px;
+		max-width: 80%;
+	}
+
+
+	.hamContainer{
+		margin-right: 32%;
+	}
+
+	.ham{
+		display: block;
+	}
+
+	.menu{
+		width: 30%;
+		right: -30%;
+		align-items: center;
+	}
+
+	.menu li a{
+		margin-right: 	unset;
+	}
+
+
 }
