@@ -114,6 +114,7 @@ let menu = document.querySelector(".menu");
 let ham = document.querySelector(".ham");
 let xIcon = document.querySelector(".xIcon");
 let menuIcon = document.querySelector(".menuIcon");
+let burgersEaten = [];
 
 ham.addEventListener("click", toggleMenu);
 
@@ -126,6 +127,8 @@ function toggleMenu() {
 		menu.classList.add("showMenu");
 		xIcon.style.display = "none";
 		menuIcon.style.display = "block";
+		let date = new Date();
+		burgersEaten.push(date)
 	}
 }
 
