@@ -143,7 +143,7 @@ nav i{
 	width: 10%;
 	height: 100vh;
 	background: #21212e;
-	transform: translateX(-100%);
+	transform: translateX(0%);
 	transition: transform 0.2s;
 	list-style: none;
 	display: flex;
@@ -161,7 +161,7 @@ nav i{
 }
 
 .showMenu {
-	transform: translateY(0);
+	transform: translateX(-100%);
 }
 /* burger slut */
 
